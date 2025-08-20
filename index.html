@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace of Mind</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="background-slideshow"></div>
+    <div class="overlay">
+        <header class="header-container">
+            <img src="assests/logo.png" class="logo">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about us">About Us</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+       
+       
+        <footer class="custom-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-brand">
+                    <img src="assests/footer-logo.png" class="footer-logo" alt="Footer Logo">
+                    <div>
+                        <h3 class="footer-title">The Peace of Mind</h3>
+                        <p class="footer-doctor">Dr. Annama Reddy Chamundeswari</p>
+                    </div>
+                </div>
+                <p class="footer-quote">"Be Awake. Be Aware. Be Attentive."</p>
+                <p class="footer-desc">Professional counselling services for mental wellness and personal growth.</p>
+            </div>
+            <div class="footer-services">
+                <h4 class="footer-heading">Services</h4>
+                <ul class="footer-list">
+                    <li>Individual Counselling</li>
+                    <li>Student Counselling</li>
+                    <li>Relationship Therapy</li>
+                    <li>Trauma Support</li>
+                    <li>Behavioral Therapy</li>
+                    <li>Mindfulness Training</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <div class="footer-contact-list">
+                    <p>📱 94445 38544</p>
+                    <p>🕒 Mon-Sat: 9AM-6PM</p>
+                    <p>🕒 Sunday: By Appointment</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Peace of Mind - EFLABS PVT. LTD All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script>
+const images = [
+    'assests/home-bg.jpeg',
+    'assests/bg2.jpg',
+    'assests/bg3.jpg'
+    // Add more image paths as needed
+];
+
+let current = 0;
+const slideshow = document.querySelector('.background-slideshow');
+
+function showNextImage() {
+    slideshow.style.opacity = 0;
+    setTimeout(() => {
+        slideshow.style.backgroundImage = `url('${images[current]}')`;
+        slideshow.style.opacity = 1;
+        current = (current + 1) % images.length;
+    }, 1000); 
+}
+
+slideshow.style.backgroundImage = `url('${images[0]}')`;
+setInterval(showNextImage, 5000); 
+</script>
+</body>
+</html>
