@@ -1,8 +1,31 @@
 .nav-bar {
-    text-align: right;
+    font-family:monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
     background-color: #ffffff;
     padding: 10px 0;
+
 }
+
+.book-counselling {
+    border-radius: 10px;
+    background: #F05A28;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: background 0.2s;
+
+}
+.book-counselling:hover {
+    background: #ff8800;
+}
+
 
 .nav-bar ul {
     list-style: none;
@@ -10,6 +33,8 @@
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    margin-right: 900px;
+
 }
 
 .nav-bar li {
@@ -27,7 +52,10 @@
 .nav-bar a:hover {
     color: #ffd700;
 }
-
+.book-counselling
+{
+    border-radius: 10px;
+}
 .logo
 {
     height: 100px;
@@ -73,8 +101,10 @@
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
+    margin-bottom: -10px;
     z-index: 999;
     box-sizing: border-box;
+    
 }
 
 .footer-container {

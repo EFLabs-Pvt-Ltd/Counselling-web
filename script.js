@@ -1,9 +1,9 @@
 // Smooth slideshow animation for .top-bg with multiple images
 const images = [
-	'assests/home-bg.jpeg',
-	'assests/bg2.jpg',
-	'assests/bg3.jpg'
-	// Add more image paths as needed
+	'assests/home-bg.webp',
+	'assests/bg2.webp',
+	'assests/bg3.webp'
+
 ];
 
 let current = 0;
@@ -22,5 +22,5 @@ if (topBg) {
 	topBg.style.backgroundImage = `url('${images[0]}')`;
 	topBg.style.transition = 'opacity 1s, background-image 1s';
 	topBg.style.opacity = 1;
-	setInterval(showNextTopBg, 2000); // change every 5 seconds
+	setInterval(showNextTopBg, 2000); // change every 2 seconds
 }
