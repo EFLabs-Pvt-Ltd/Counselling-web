@@ -21,9 +21,11 @@
                 </ul>
             </nav>
         </header>
-        <h1>Hello World</h1>
+        <div class="background-slideshow"></div>
+    <div class="top-bg"></div>
 
-
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam blanditiis inventore praesentium delectus, obcaecati dignissimos necessitatibus aperiam expedita aut ullam tempore, adipisci voluptatum? Veritatis, amet quo perferendis voluptatum incidunt repudiandae?</p>
+       </div>
         <footer class="custom-footer">
     <div class="footer-container">
         <div class="footer-grid">
@@ -63,29 +65,7 @@
         </div>
     </div>
 </footer>
-    </div>
-    <script>
-const images = [
-    'assests/home-bg.jpeg',
-    'assests/bg2.jpg',
-    'assests/bg3.jpg'
-    // Add more image paths as needed
-];
-
-let current = 0;
-const slideshow = document.querySelector('.background-slideshow');
-
-function showNextImage() {
-    slideshow.style.opacity = 0;
-    setTimeout(() => {
-        slideshow.style.backgroundImage = `url('${images[current]}')`;
-        slideshow.style.opacity = 1;
-        current = (current + 1) % images.length;
-    }, 1000); 
-}
-
-slideshow.style.backgroundImage = `url('${images[0]}')`;
-setInterval(showNextImage, 5000); 
-</script>
+    
+    <script src="script.js"></script>
 </body>
 </html>

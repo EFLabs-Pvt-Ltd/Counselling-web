@@ -45,16 +45,19 @@
     z-index: 1000;
 }
 
-body {
-    background-image: url('assests/home-bg.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    margin: 0;
+.top-bg {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     padding: 0;
+    border: none;
 }
+
+
 
 .overlay {
     margin-top: 110px; 
@@ -65,11 +68,13 @@ body {
     background-color: #222;
     color: #fff;
     padding: 60px 0 0 0;
-    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     z-index: 999;
+    box-sizing: border-box;
 }
 
 .footer-container {
@@ -164,16 +169,3 @@ body {
     margin-right: 12px;     
 }
 
-.background-slideshow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out, opacity 1s;
-    opacity: 1;
-}   
