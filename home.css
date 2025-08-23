@@ -41,8 +41,9 @@
 }
 
 .nav-bar a:hover {
-    color: #ffd700;
+    color: #d400ff;
 }
+
 .book-counselling
 {
     border-radius: 10px;
@@ -224,33 +225,25 @@
   margin-bottom: 30px;
 }
 
-.banner-text button {
-  background-color: #246b8f;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s ease;
-}
-
-.banner-text button:hover {
-  background-color: #1d5672;
-}
 
 /* Image */
-.banner-image {
-  flex: 1;
+
+
+.banner-image img {
+
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
-}
-
-.banner-image img {
+  min-width: 300px;  
   max-width: 110%;
-  height: auto;
-  border-radius: 18px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  border-radius: 23px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+  transition: all 1s ease;
+}
+.banner-image img:hover {
+
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 20px #7a6274, 0 0 20px #7a6274, 0 0 20px #7a6274;
+
 }
