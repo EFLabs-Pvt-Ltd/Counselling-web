@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="about.css">
+    
 </head>
 <body>
-    <!-- Header Section -->
+     <!-- Header Section -->
     <div class="background-slideshow"></div>
     <div class="overlay">
         <header class="header-container">
             <!-- logo -->
-            <a href="home.html"><img src="assests/logo.webp" class="logo" alt="Home"></a>
+            <div class="logo-container">
+                <a href="index.html"><img src="assests/logo.webp" class="logo" alt="Home"></a>
+            </div>
             <!-- nav-bar -->
             <nav class="nav-bar">
-                <nav class="nav-center">
-                    <a href="index.html">Home</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                </nav>
-                <button class="book-counselling">BOOK COUNSELLING</button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button class="book-counselling">Book Counselling</button></li>
+                </ul>
             </nav>
         </header>
         <div class="background-slideshow"></div>
-    <div class="top-bg"></div>
-
 
         <!-- About Content -->
     <section class="about-section">
@@ -120,5 +126,6 @@
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
