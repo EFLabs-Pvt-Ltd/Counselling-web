@@ -15,15 +15,23 @@
     <div class="overlay">
         <header class="header-container">
             <!-- logo -->
-            <img src="assests/logo.webp" class="logo">
+            <div class="logo-container">
+                <img src="assests/logo.webp" class="logo" alt="Logo">
+            </div>
             <!-- nav-bar -->
             <nav class="nav-bar">
-                <nav class="nav-center">
-                    <a href="about.html">About</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                </nav>
-                <button class="book-counselling">BOOK COUNSELLING</button>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button class="book-counselling">Book Counselling</button></li>
+                </ul>
             </nav>
         </header>
         <div class="background-slideshow"></div>
@@ -134,5 +142,6 @@
     </div>
 </footer>
     <script src="script.js"></script>
+
 </body>
 </html>

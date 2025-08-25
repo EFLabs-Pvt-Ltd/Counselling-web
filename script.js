@@ -24,3 +24,20 @@ if (topBg) {
 	topBg.style.opacity = 1;
 	setInterval(showNextTopBg, 2000); // change every 2 seconds
 }
+
+// Hamburger menu functionality
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active');
+});
+
+// Optional: close menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+    }
+});
