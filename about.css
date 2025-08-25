@@ -26,7 +26,7 @@ span{
 
 }
 .book-counselling:hover {
-    background: #502958;
+        background-color:#5f3268;
 }
 
 
@@ -43,7 +43,7 @@ span{
 }
 
 .nav-bar a:hover {
-    color: #d400ff;
+    color:#d400ff;
 }
 .book-counselling
 {
@@ -265,7 +265,7 @@ body {
     }
     .about-button
     {
-        background-color: #7a6274;
+        background-color: #9454a3;
         color: white;
         border: none;
         border-radius: 5px;
@@ -276,5 +276,5 @@ body {
 
     .about-button:hover
     {
-        background-color: #6b4e5a;
+        background-color: #744180;
     }
