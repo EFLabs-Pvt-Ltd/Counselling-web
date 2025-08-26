@@ -1,6 +1,6 @@
 
 body {
-    background-color: #FFFFE3;
+    background-color: #e4e4cc;
 }
 
                                                             /* Header */
@@ -278,7 +278,7 @@ body {
 .services {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background: #FFFFE3;
+    background: #e4e4cc;
 }
 
 .services h2 {
@@ -314,6 +314,8 @@ body {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
+
+
 
 .service-card h3 {
     margin-bottom: 1rem;
@@ -363,6 +365,7 @@ body {
     transform: scale(1.01);
     box-shadow: 0 0 20px rgba(122, 98, 116, 0.6);
 }
+
 /* Responsive */
 @media (min-width: 768px) {
     

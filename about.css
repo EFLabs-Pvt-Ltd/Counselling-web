@@ -1,8 +1,4 @@
 
-body
-{
-    background-color: #FFFFE3;
-}
 span{
     color: darkgoldenrod
 }
@@ -235,7 +231,7 @@ span{
 body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: beige
+      background: #e4e4cc
     }
     .about-section {
       display: flex;
