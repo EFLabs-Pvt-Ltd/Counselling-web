@@ -4,32 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peace of Mind</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=psychology" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=relax" />
+
+
 </head>
+
+    <style>
+    
+    </style>
 <body>
+
+    <!-- Header Section -->
     <div class="background-slideshow"></div>
     <div class="overlay">
         <header class="header-container">
-            <img src="assests/logo.png" class="logo">
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="index.html"><img src="assests/logo.webp" class="logo" alt="Home"></a>
+            </div>
+            <!-- nav-bar -->
             <nav class="nav-bar">
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about us">About Us</a></li>
-                    <li><a href="blog">Blog</a></li>
-                    <li><a href="contact">Contact</a></li>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button class="book-counselling">Book Counselling</button></li>
                 </ul>
             </nav>
         </header>
-        
-       
-       
-        <footer class="custom-footer">
+        <div class="background-slideshow"></div>
+    <div class="top-bg"></div>
+
+
+    <!-- Banner Section -->
+     <section class="banner">
+    <div class="banner-text">
+      <h1>Unlock Your Full Potential <br> with Career Counseling</h1>
+      <p>
+        Find Your<span style="color: #9454a3"> Peace of Mind</span> 
+        <br>
+        <br>
+        Specialized counseling and healing therapies by Dr. Annama Reddy Chamundeswari. Supporting your journey toward mental wellness with compassion and expertise.
+      </p>
+    </div>
+    <div class="banner-image">
+      <img src="assests/mental_health.webp" alt="this is home image" >
+    </div>
+  </section>
+        </div>
+
+        <!-- services Section -->
+        <section class="services">
+            <div class="container">
+
+                <h2>Our Services</h2>
+                
+                <div class="service-cards">
+                    <div class="service-card">
+                        <i class="fa-solid fa-user-group" style="color: #9454a3;"></i>
+                        <h3>Individual Counselling</h3>
+                        <p>One-on-one sessions tailored to your specific needs and goals.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-heart fa-beat" style="color: #9454a3;"></i>
+                        <h3>Relationship Therapy</h3>
+                        <p>Build stronger, healthier relationships with professional guidance.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-graduation-cap" style="color: #9454a3;"></i>
+                        <h3>Student & Academic Counselling</h3>
+                        <p> Support for students facing academic and career pressures.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-square-person-confined" style="color: #9454a3;"></i>
+                        <h3>Trauma Support</h3>
+                        <p>Care for trauma recovery and emotional well-being.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-user-shield" style="color: #9454a3;"></i>
+                        <h3>Behavioral Therapy</h3>
+                        <p>Therapies for behavior change and emotional growth.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fa-solid fa-hand-peace" style="color: #9454a3;"></i>
+                        <h3>Mindfulness Training</h3>
+                        <p>Therapies to manage stress, anxiety, and depression.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Footer Section -->
+ <footer class="custom-footer">
     <div class="footer-container">
         <div class="footer-grid">
             <div class="footer-about">
                 <div class="footer-brand">
-                    <img src="assests/footer-logo.png" class="footer-logo" alt="Footer Logo">
+                    <img src="assests/footer-logo.webp" class="footer-logo" alt="Footer Logo">
                     <div>
                         <h3 class="footer-title">The Peace of Mind</h3>
                         <p class="footer-doctor">Dr. Annama Reddy Chamundeswari</p>
@@ -59,33 +144,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 The Peace of Mind - EFLABS PVT. LTD All rights reserved.</p>
+            <p>&copy; 2025 The Peace of Mind - EFLABS PVT. LTD All rights reserved.</p>
         </div>
     </div>
 </footer>
-    </div>
-    <script>
-const images = [
-    'assests/home-bg.jpeg',
-    'assests/bg2.jpg',
-    'assests/bg3.jpg'
-    // Add more image paths as needed
-];
+    <script src="script.js"></script>
 
-let current = 0;
-const slideshow = document.querySelector('.background-slideshow');
-
-function showNextImage() {
-    slideshow.style.opacity = 0;
-    setTimeout(() => {
-        slideshow.style.backgroundImage = `url('${images[current]}')`;
-        slideshow.style.opacity = 1;
-        current = (current + 1) % images.length;
-    }, 1000); 
-}
-
-slideshow.style.backgroundImage = `url('${images[0]}')`;
-setInterval(showNextImage, 5000); 
-</script>
 </body>
 </html>
