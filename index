@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peace of Mind</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="gallery_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=psychology" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=relax" />
@@ -23,7 +23,7 @@
         <header class="header-container">
             <!-- logo -->
             <div class="logo-container">
-                <a href="index.html"><img src="assests/logo.webp" class="logo" alt="Home"></a>
+                <a href="index.html"><img src="assests/logo.png" class="logo" alt="Home"></a>
             </div>
             <!-- nav-bar -->
             <nav class="nav-bar">
@@ -43,78 +43,67 @@
         <div class="background-slideshow"></div>
     <div class="top-bg"></div>
 
+        <div>
+            <h1 class="titlebar">Gallery</h1>
 
-    <!-- Banner Section -->
-     <section class="banner">
-    <div class="banner-text">
-      <h1>Unlock Your Full Potential <br> with Career Counseling</h1>
-      <p>
-        Find Your<span style="color: #9454a3"> Peace of Mind</span> 
-        <br>
-        <br>
-        Specialized counseling and healing therapies by Dr. Annama Reddy Chamundeswari. Supporting your journey toward mental wellness with compassion and expertise.
-      </p>
-    </div>
-    <div class="banner-image">
-      <img src="assests/mental_health.webp" alt="this is home image" >
-    </div>
-  </section>
-        </div>
 
-        <!-- services Section -->
-        <section class="services">
-            <div class="container">
-
-                <h2>Our Services</h2>
+            <!--Flex Container-->
+            <div>
+             <button class="icon-btn">
+                 <img src="assests/award.webp">
+             </button>
+               
+             <button class="icon-btn">
+                <img src="assests/awardgopi.webp">
+             </button>
                 
-                <div class="service-cards">
-                    <div class="service-card">
-                        <i class="fa-solid fa-user-group" style="color: #9454a3;"></i>
-                        <h3>Individual Counselling</h3>
-                        <p>One-on-one sessions tailored to your specific needs and goals.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <i class="fa-solid fa-heart fa-beat" style="color: #9454a3;"></i>
-                        <h3>Relationship Therapy</h3>
-                        <p>Build stronger, healthier relationships with professional guidance.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <i class="fa-solid fa-graduation-cap" style="color: #9454a3;"></i>
-                        <h3>Student & Academic Counselling</h3>
-                        <p> Support for students facing academic and career pressures.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <i class="fa-solid fa-square-person-confined" style="color: #9454a3;"></i>
-                        <h3>Trauma Support</h3>
-                        <p>Care for trauma recovery and emotional well-being.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <i class="fa-solid fa-user-shield" style="color: #9454a3;"></i>
-                        <h3>Behavioral Therapy</h3>
-                        <p>Therapies for behavior change and emotional growth.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <i class="fa-solid fa-hand-peace" style="color: #9454a3;"></i>
-                        <h3>Mindfulness Training</h3>
-                        <p>Therapies to manage stress, anxiety, and depression.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-    <!-- Footer Section -->
+             <button class="icon-btn">
+                <img src="assests/group2.webp">
+             </button>
+                
+             <button class="icon-btn">
+                 <img src="assests/mic-2.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/news (1).webp">
+             </button>
+            
+             <button class="icon-btn">
+                 <img src="assests/onstage.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/potrait1.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/potrait3.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/group6.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/potrait2.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/group4.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/group5.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/group3.webp">
+             </button>
+             <button class="icon-btn">
+                 <img src="assests/group1.webp">
+             </button>
+             
+               </div>
+  <!-- Footer Section -->
  <footer class="custom-footer">
     <div class="footer-container">
         <div class="footer-grid">
             <div class="footer-about">
                 <div class="footer-brand">
-                    <img src="assests/footer-logo.webp" class="footer-logo" alt="Footer Logo">
+                    <img src="assests/footer-logo.png" class="footer-logo" alt="Footer Logo">
                     <div>
                         <h3 class="footer-title">The Peace of Mind</h3>
                         <p class="footer-doctor">Dr. Annama Reddy Chamundeswari</p>
@@ -148,7 +137,6 @@
         </div>
     </div>
 </footer>
-    <script src="script.js"></script>
-
 </body>
+
 </html>
