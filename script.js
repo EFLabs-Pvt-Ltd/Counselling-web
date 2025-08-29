@@ -1,8 +1,8 @@
 // Smooth slideshow animation for .top-bg with multiple images
 const images = [
-	'assests/home-bg.webp',
-	'assests/bg2.webp',
-	'assests/bg3.webp'
+	'assests/1.webp',
+	'assests/2.webp',
+	'assests/3.webp'
 
 ];
 
@@ -68,3 +68,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+const testimonials = document.querySelectorAll('.testimonial-card');
+const prevBtn = document.querySelector('.testimonial-nav .prev');
+const nextBtn = document.querySelector('.testimonial-nav .next');
+let index = 0;
+
+function showTestimonial(n) {
+  testimonials.forEach((card, i) => {
+    card.classList.remove('active');
+    if (i === n) {
+      card.classList.add('active');
+    }
+  });
+}
+
+prevBtn.addEventListener('click', () => {
+  index = (index - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(index);
+});
+
+nextBtn.addEventListener('click', () => {
+  index = (index + 1) % testimonials.length;
+  showTestimonial(index);
+});
+
+
+setInterval(() => {
+  index = (index + 1) % testimonials.length;
+  showTestimonial(index);
+}, 6000);
