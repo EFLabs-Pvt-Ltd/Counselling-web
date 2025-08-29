@@ -1,7 +1,8 @@
-
 span{
     color: darkgoldenrod
 }
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
 
                              /* Header */
 .header-container {
@@ -142,7 +143,6 @@ span{
     transform: translateY(-6px) rotate(-45deg);
 }
 
-/* Responsive */
 @media (max-width: 900px) {
     .header-container {
         padding: 12px 20px;
@@ -198,11 +198,12 @@ span{
     }
 
     .book-counselling {
-        margin-left: 30px;
-        margin-bottom: 30px;
-        width: 100%;
-        text-align: center;
-    }
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
 
     .nav-overlay {
         display: none;
@@ -263,7 +264,7 @@ body {
         height: 650px;
         margin-right: 100px;
         margin-top: 55px;
-        border-radius: 98px;
+        border-radius: 112px;
         box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4);
         transition: all 1s ease;
     }
@@ -433,3 +434,86 @@ body {
     margin-right: 12px;     
 }
 
+@media (max-width: 768px) {
+  .logo { height: 72px; }                   /* smaller logo on phones */
+  .book-counselling {                       /* button fits small screens */
+    width: 90%;
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  /*drawer*/
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 25vh;                           
+    width: 270px;
+    background: #f0ecf1;
+    flex-direction: column;
+    align-items: center;               
+    padding: 80px 20px 30px;
+    transition: right 0.2s ease;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    z-index: 1001;
+  }
+  .nav-links.active { right: 0; }
+  .nav-links li { width: 100%; margin: 12px 0; }
+  .nav-links a { display: block; padding: 12px 15px; font-size: 1.05rem; }
+
+  /* About section: stack + scale  pannirukaen*/
+  .about-section {
+    flex-direction: column;                 /* Idhu dhaan OG intent */
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .about-text {
+    max-width: 100%;
+    font-size: 16px;                        
+  }
+  .about-img1 {
+    width: 79%;
+    height: auto;                          
+    margin: 20px 0 0 0;                     
+                        
+  }
+   /* Product image + text */
+  .about-product {
+    width: 92%;
+    max-width: 92%;
+    height: auto;                          
+    margin: 24px 0 0 0;                     
+    border-radius: 24px;
+  }
+  .product-text {
+    display: block;                       
+    margin: 16px auto;                     
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;                 
+    gap: 40px;                               
+    padding: 20px;                          
+  }
+
+  /* Footer stacks */
+  .custom-footer {
+    width: 100%;                            /* scroll bar issue kaaga */
+    margin: 0;                            
+  }
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-about, .footer-services, .footer-contact {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: unset;
+  }
+  .footer-logo { height: 40px; }
+}

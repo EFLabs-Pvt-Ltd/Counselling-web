@@ -1,8 +1,8 @@
 // Smooth slideshow animation for .top-bg with multiple images
 const images = [
-	'assests/home-bg.webp',
-	'assests/bg2.webp',
-	'assests/bg3.webp'
+	'./assests/1.webp',
+	'./assests/3.webp',
+	'./assests/2.webp'
 
 ];
 
