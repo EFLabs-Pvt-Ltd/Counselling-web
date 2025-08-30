@@ -162,7 +162,7 @@ img { max-width: 100%; height: auto; }
 
     .nav-bar {
         display: flex;
-        align-items: center;
+        align-items: right;
     }
 
     
