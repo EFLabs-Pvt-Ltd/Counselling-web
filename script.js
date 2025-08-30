@@ -3,7 +3,6 @@ const images = [
 	'assests/1.webp',
 	'assests/2.webp',
 	'assests/3.webp'
-
 ];
 
 let current = 0;
@@ -15,14 +14,26 @@ function showNextTopBg() {
 		topBg.style.backgroundImage = `url('${images[current]}')`;
 		topBg.style.opacity = 1;
 		current = (current + 1) % images.length;
-	}, 100); // fade duration
+	}, 500); // Increased fade duration for smoother transition
 }
 
+// Preload images for smoother transitions
+function preloadImages() {
+    const imageObjects = [];
+    for (let i = 0; i < images.length; i++) {
+        const img = new Image();
+        img.src = images[i];
+        imageObjects.push(img);
+    }
+}
+
+// Initialize the slideshow
 if (topBg) {
+	preloadImages();
 	topBg.style.backgroundImage = `url('${images[0]}')`;
-	topBg.style.transition = 'opacity 1s, background-image 1s';
+	topBg.style.transition = 'opacity 1.2s ease-in-out';
 	topBg.style.opacity = 1;
-	setInterval(showNextTopBg, 2000); // change every 2 seconds
+	setInterval(showNextTopBg, 3000); // Change every 3 seconds for better viewing
 }
 
 document.addEventListener('DOMContentLoaded', () => {
